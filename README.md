@@ -3,3 +3,9 @@
 ```
 docker build -t lambda-mysql-ruby .
 ```
+
+## deploy
+
+```
+aws lambda update-function-code --function-name arn:aws:lambda:us-west-2:********:function:RubySql --zip-file fileb://deploy.zip
+```
